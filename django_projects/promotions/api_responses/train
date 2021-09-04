@@ -1,0 +1,10 @@
+{
+	"model_name":"model_7",
+	"criterion": "gini",
+	"min_samples_split" : 5,
+	"max_depth": 5,
+	"bootstrap": false,
+	"verbose": 1
+}
+
+

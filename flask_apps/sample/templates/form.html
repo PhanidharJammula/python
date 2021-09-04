@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Details{% endblock %}
+
+{% block content %}
+<h1>Hello {{ name }}, you are details page</h1>
+<form method="POST" action="/theform">
+                        <input type="text" name="name">
+                        <input type="text" name="location">
+                        <input type="submit" value="Submit">
+</form>
+
+{% if display %}
+<h2>This is being displayed</h2>
+{% else %}
+<h2>This is not being displayed</h2>
+{% endif %}
+
+{% for x in mylist %}
+<h3>{{ x }}</h3>
+{% endfor %}
+
+{% endblock %}
+
+

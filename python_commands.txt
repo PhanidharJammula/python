@@ -1,0 +1,25 @@
+pip commands:
+To get list of outdated python packages which are installed -> pip list --outdated
+to upgrade a specific python package -> pip install [package_name] --upgrade
+upgrading pip -> pip install -U pip
+
+install virtual env for python3.5:
+apt install python3.5-venv
+
+create a virtualenv in python2:
+python2.7 -m pip install virtualenv
+python -m virtualenv <name>
+
+create a venv for python3:
+python3 -m venv <name>
+
+source {env}/bin/activate
+
+to setup default python:
+update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
+
+to skip ssl verification
+export PYTHONHTTPSVERIFY=0
+
+
